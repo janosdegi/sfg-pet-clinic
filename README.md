@@ -1,1 +1,1 @@
-# springFrameworkGuru_PetClinic
+# sfg-pet-clinic
