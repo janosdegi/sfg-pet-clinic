@@ -54,7 +54,7 @@
 	</build>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/janosdegi/sfg-pet-clinic.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:janosdegi/sfg-pet-clinic.git</developerConnection>
   </scm>
 
 </project>
