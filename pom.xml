@@ -30,8 +30,8 @@
 	</properties>
 
 	<scm>
-		<url>https://github.com/janosdegi/sfg-pet-clinic</url>
-		<connection>scm:git:git://github.com/janosdegi/sfg-pet-clinic.git</connection>
+		<!--<url>https://github.com/janosdegi/sfg-pet-clinic</url>-->
+		<!--<connection>scm:git:git://github.com/janosdegi/sfg-pet-clinic.git</connection>-->
 		<developerConnection>scm:git:git@github.com:janosdegi/sfg-pet-clinic.git</developerConnection>
 	  <tag>HEAD</tag>
   </scm>
@@ -51,7 +51,7 @@
 					<!--<checkModificationExcludes>-->
 						<!--<checkModificationExclude>pom.xml</checkModificationExclude>-->
 					<!--</checkModificationExcludes>-->
-					<!--<autoVersionSubmodules>true</autoVersionSubmodules>-->
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 				</configuration>
 				<!--<dependencies>-->
 					<!--<dependency>-->
