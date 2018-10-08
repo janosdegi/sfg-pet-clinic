@@ -24,6 +24,9 @@ public class OwnerSDJpaService implements OwnerService {
 
     public OwnerSDJpaService(OwnerRepository ownerRepository, PetRepository petRepository,
                              PetTypeRepository petTypeRepository) {
+//        Why field injection is evil
+//        http://olivergierke.de/2013/11/why-field-injection-is-evil/
+//        https://stackoverflow.com/questions/40620000/spring-autowire-on-properties-vs-constructor
         this.ownerRepository = ownerRepository;
         this.petRepository = petRepository;
         this.petTypeRepository = petTypeRepository;
