@@ -41,11 +41,11 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
     @Override
     public Owner save(Owner object) {
 
-        System.out.println("---------------------------------------------------------------------");
-        System.out.println("");
-        System.out.println(" default/map :: save owner ");
-        System.out.println("");
-        System.out.println("---------------------------------------------------------------------");
+//        System.out.println("---------------------------------------------------------------------");
+//        System.out.println("");
+//        System.out.println(" default/map :: save owner ");
+//        System.out.println("");
+//        System.out.println("---------------------------------------------------------------------");
 
         if (object != null) {
             if (object.getPets() != null) {
