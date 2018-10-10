@@ -99,13 +99,15 @@ public class OwnerSDJpaServiceTest {
 
         assertEquals(LAST_NAME, savedOwner.getLastName());
         assertNotNull(savedOwner);
-
+        verify(ownerRepository).save(any());
     }
 
     @Test
     public void delete() throws Exception {
         service.delete(returnOwner);
-        verify(ownerRepository).delete(any());
+
+        //default is 1 times
+        verify(ownerRepository, times(1)).delete(any());
     }
 
     @Test
