@@ -1,14 +1,38 @@
 package guru.springframework.sfgpetclinic.model;
 
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.Set;
 
 /**
  * Created by Dégi János on 2018.09.11..
  */
+@Getter
+@Setter
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "owner")
 public class Owner extends Person {
+
+    public Owner() {
+    }
+
+    @Builder
+    public Owner(Long id, String firstName, String lastName, String address, String city,
+                 String telephone, Set<Pet> pets) {
+        super(id, firstName, lastName);
+        this.address = address;
+        this.city = city;
+        this.telephone = telephone;
+
+        if(pets != null) {
+            this.pets = pets;
+        }
+    }
 
     @Column(name = "address")
     private String address;
@@ -53,4 +77,9 @@ public class Owner extends Person {
     public void setPets(Set<Pet> pets) {
         this.pets = pets;
     }
+
+//    @Override
+//    public int hashCode() {
+//        return super.hashCode();
+//    }
 }
