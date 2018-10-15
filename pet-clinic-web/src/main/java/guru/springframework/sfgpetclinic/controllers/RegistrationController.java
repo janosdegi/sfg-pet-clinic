@@ -1,6 +1,6 @@
 package guru.springframework.sfgpetclinic.controllers;
 
-import guru.springframework.sfgpetclinic.RegistrationDTO;
+import guru.springframework.sfgpetclinic.dto.RegistrationDTO;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

@@ -1,4 +1,4 @@
-package guru.springframework.sfgpetclinic;
+package guru.springframework.sfgpetclinic.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
