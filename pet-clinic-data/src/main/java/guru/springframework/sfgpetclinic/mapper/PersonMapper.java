@@ -16,6 +16,6 @@ public interface PersonMapper {
 
     @Mapping(source = "firstName", target = "email")
     @Mapping(source = "lastName", target = "password")
-    RegistrationDTO personToregistrationDTO(Person person);
+    RegistrationDTO personToRegistrationDTO(Person person);
 
 }

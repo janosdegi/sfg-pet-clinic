@@ -19,7 +19,7 @@ public class PersonMapperTest {
 
         Person person = new Person(FIRST_NAME, LAST_NAME);
 
-        RegistrationDTO registrationDTO = PersonMapper.INSTANCE.personToregistrationDTO(person);
+        RegistrationDTO registrationDTO = PersonMapper.INSTANCE.personToRegistrationDTO(person);
 
         assertEquals(registrationDTO.getEmail(), FIRST_NAME);
         assertEquals(registrationDTO.getEmail(), person.getFirstName());
