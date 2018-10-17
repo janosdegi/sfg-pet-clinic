@@ -58,7 +58,20 @@
             <!--<version>5.0.0-M4</version>-->
             <!--<scope>test</scope>-->
         <!--</dependency>-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox-swagger.version}</version>
+        </dependency>
     </dependencies>
+    <properties>
+        <springfox-swagger.version>2.7.0</springfox-swagger.version>
+    </properties>
 
     <build>
         <plugins>
