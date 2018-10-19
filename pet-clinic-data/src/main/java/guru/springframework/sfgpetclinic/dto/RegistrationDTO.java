@@ -1,5 +1,6 @@
 package guru.springframework.sfgpetclinic.dto;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,8 +15,11 @@ import lombok.Setter;
 @NoArgsConstructor
 public class RegistrationDTO {
 
+    @ApiModelProperty(value = "This is the email", required = true)
     private String email;
     private String password;
+
+    @ApiModelProperty(value = "This is the date of registration", required = false)
     private String registrationDate;
 
 }
